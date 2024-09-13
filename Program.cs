@@ -4,7 +4,7 @@ namespace cowsayApp
 {
     class Cowsay
     {
-        public static string Say(string? message) //? check if null
+        public static string Say(string message)
         {
             string output = string.Empty; 
             string error = string.Empty;
@@ -47,10 +47,15 @@ namespace cowsayApp
                 Console.WriteLine("What is the cow thinking?");
                 string? message = Console.ReadLine();
                 
-                Cowsay Cow = new Cowsay();
-                string output = Cow.Say(message);
-
-                Console.WriteLine(output);
+                if (string.IsNullOrWhiteSpace(message))
+                {
+                    Console.WriteLine("The cow is not thinking of anything -_-");
+                }
+                else
+                {
+                    string output = Cowsay.Say(message);
+                    Console.WriteLine(output);
+                }
 
             }
             catch (Exception e)
