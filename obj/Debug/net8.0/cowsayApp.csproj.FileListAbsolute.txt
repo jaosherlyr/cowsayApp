@@ -1,0 +1,15 @@
+/home/jao/code/cowsayApp/obj/Debug/net8.0/cowsayApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/jao/code/cowsayApp/obj/Debug/net8.0/cowsayApp.AssemblyInfoInputs.cache
+/home/jao/code/cowsayApp/obj/Debug/net8.0/cowsayApp.AssemblyInfo.cs
+/home/jao/code/cowsayApp/obj/Debug/net8.0/cowsayApp.csproj.CoreCompileInputs.cache
+/home/jao/code/cowsayApp/obj/Debug/net8.0/cowsayApp.sourcelink.json
+/home/jao/code/cowsayApp/bin/Debug/net8.0/cowsayApp
+/home/jao/code/cowsayApp/bin/Debug/net8.0/cowsayApp.deps.json
+/home/jao/code/cowsayApp/bin/Debug/net8.0/cowsayApp.runtimeconfig.json
+/home/jao/code/cowsayApp/bin/Debug/net8.0/cowsayApp.dll
+/home/jao/code/cowsayApp/bin/Debug/net8.0/cowsayApp.pdb
+/home/jao/code/cowsayApp/obj/Debug/net8.0/cowsayApp.dll
+/home/jao/code/cowsayApp/obj/Debug/net8.0/refint/cowsayApp.dll
+/home/jao/code/cowsayApp/obj/Debug/net8.0/cowsayApp.pdb
+/home/jao/code/cowsayApp/obj/Debug/net8.0/cowsayApp.genruntimeconfig.cache
+/home/jao/code/cowsayApp/obj/Debug/net8.0/ref/cowsayApp.dll
