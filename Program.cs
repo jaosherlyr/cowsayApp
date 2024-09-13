@@ -12,7 +12,7 @@ namespace cowsayApp
             using (Process myProcess = new())
                 {
                     myProcess.StartInfo.FileName = "/usr/games/cowsay";
-                    // myProcess.StartInfo.Arguments = "-f vader";
+                    myProcess.StartInfo.Arguments = "-f vader";
                     myProcess.StartInfo.UseShellExecute = false;
                     myProcess.StartInfo.RedirectStandardInput = true;
                     myProcess.StartInfo.RedirectStandardOutput = true;
@@ -44,12 +44,12 @@ namespace cowsayApp
         {
             try
             {
-                Console.WriteLine("What is the cow thinking?");
+                Console.WriteLine("What is the cow saying?");
                 string? message = Console.ReadLine();
                 
                 if (string.IsNullOrWhiteSpace(message))
                 {
-                    Console.WriteLine("The cow is not thinking of anything -_-");
+                    Console.WriteLine("The cow is not saying of anything -_-");
                 }
                 else
                 {
