@@ -4,12 +4,12 @@ namespace cowsayApp
 {
     class Cowsay
     {
-        public string Say(string? message)
+        public static string Say(string? message) //? check if null
         {
-            string output = string.Empty;
+            string output = string.Empty; 
             string error = string.Empty;
 
-            using (Process myProcess = new Process())
+            using (Process myProcess = new())
                 {
                     myProcess.StartInfo.FileName = "/usr/games/cowsay";
                     // myProcess.StartInfo.Arguments = "-f vader";
@@ -17,8 +17,10 @@ namespace cowsayApp
                     myProcess.StartInfo.RedirectStandardInput = true;
                     myProcess.StartInfo.RedirectStandardOutput = true;
                     myProcess.StartInfo.RedirectStandardError = true;
+
                     myProcess.Start();
 
+                    //input
                     StreamWriter myStreamWriter = myProcess.StandardInput;
                     myStreamWriter.WriteLine(message);
                     myStreamWriter.Close();
@@ -45,8 +47,8 @@ namespace cowsayApp
                 Console.WriteLine("What is the cow thinking?");
                 string? message = Console.ReadLine();
                 
-                Cowsay cow = new Cowsay();
-                string output = cow.Say(message);
+                Cowsay Cow = new Cowsay();
+                string output = Cow.Say(message);
 
                 Console.WriteLine(output);
 
